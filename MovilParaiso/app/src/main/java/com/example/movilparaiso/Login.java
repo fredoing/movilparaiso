@@ -16,7 +16,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button btn_login = findViewById(R.id.btnLogin);
+        Button btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +36,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void openMenu() {
-
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
     }
 }

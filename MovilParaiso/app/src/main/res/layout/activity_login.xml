@@ -38,7 +38,7 @@
                 android:background="@drawable/edittextbackground"/>
 
             <Button
-                android:id="@+id/btnlogin"
+                android:id="@+id/btn_login"
                 android:layout_width="270sp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/password"
@@ -54,7 +54,7 @@
                 android:id="@+id/olvido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btnlogin"
+                android:layout_below="@id/btn_login"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/azul"
                 android:textSize="20sp"

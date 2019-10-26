@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="290sp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/userico"
+                android:drawablePadding="10sp"
+                android:textSize="26sp"
+                android:hint="@string/user"
+                android:background="@drawable/edittextbackground"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="290sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:layout_marginTop="20sp"
+                android:textSize="26sp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="10sp"
+                android:hint="@string/pass"
+                android:background="@drawable/edittextbackground"/>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="270sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80sp"
+                android:background="@color/amarillo"
+                android:typeface="sans"
+                android:text="@string/login"
+                android:textSize="26sp"
+                android:textColor="@color/azul"/>
+
+            <TextView
+                android:id="@+id/olvido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnlogin"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/azul"
+                android:textSize="20sp"
+                android:text="@string/olvido"
+                android:layout_marginTop="10sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

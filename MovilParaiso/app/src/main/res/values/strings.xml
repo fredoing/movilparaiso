@@ -4,4 +4,7 @@
     <string name="login">iniciar sesión</string>
     <string name="registrarse">registrarse</string>
     <string name="escudo">escudo municipalidad</string>
+    <string name="user">USUARIO</string>
+    <string name="pass">CONTRASEÑA</string>
+    <string name="olvido">¿Olvidó su contraseña?</string>
 </resources>

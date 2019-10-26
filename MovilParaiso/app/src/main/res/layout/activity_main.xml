@@ -6,13 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/txtMuni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/muni_paraiso"
+                android:layout_centerHorizontal="true"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"/>
+
+            <ImageView
+                android:id="@+id/imgescudo"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtMuni"
+                android:layout_marginTop="20sp"
+                android:background="@color/gris"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imgescudo"
+                android:layout_marginTop="90sp"
+                android:background="@color/azul"
+                android:textColor="@android:color/white"
+                android:text="@string/login"
+                android:textSize="26sp"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btnLogin"
+                android:layout_marginTop="20sp"
+                android:background="@color/amarillo"
+                android:textColor="@color/azul"
+                android:text="@string/registrarse"
+                android:textSize="26sp"
+                android:typeface="sans"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

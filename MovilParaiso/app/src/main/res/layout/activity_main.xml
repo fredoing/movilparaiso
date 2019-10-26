@@ -34,7 +34,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/txtMuni"
                 android:layout_marginTop="20sp"
-                android:background="@color/gris"/>
+                android:background="@color/gris"
+                android:contentDescription="@string/escudo"/>
 
             <Button
                 android:id="@+id/btnLogin"

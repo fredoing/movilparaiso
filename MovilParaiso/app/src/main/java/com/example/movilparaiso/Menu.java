@@ -36,7 +36,8 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openAtractivos() {
-
+        Intent intent = new Intent(this, ListAtractivos.class);
+        startActivity(intent);
     }
 
     public void openAgenda() {

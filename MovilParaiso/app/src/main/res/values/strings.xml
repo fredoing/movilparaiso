@@ -9,4 +9,8 @@
     <string name="olvido">¿Olvidó su contraseña?</string>
     <string name="gestAtrac">gestionar\natractivos\nturísticos</string>
     <string name="gestAgenda">gestionar\nagenda\ncultural</string>
+    <string name="atract">atractivo</string>
+    <string name="dist">distrito</string>
+    <string name="addatract">agregar\natractivo</string>
+    <string name="deleteatract">eliminar\natractivo</string>
 </resources>

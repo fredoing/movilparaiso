@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Menu">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/titlebar"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="60dp"
+            android:layout_marginTop="270dp">
+
+            <Button
+                android:id="@+id/btn_gestAtrac"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:background="@color/azul"
+                android:text="@string/gestAtrac"
+                android:textSize="26sp"
+                android:typeface="sans"
+                android:textColor="@android:color/white"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btn_gestAgenda"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_gestAtrac"
+                android:layout_marginTop="80dp"
+                android:background="@color/amarillo"
+                android:text="@string/gestAgenda"
+                android:textColor="@color/azul"
+                android:textSize="26sp"
+                android:typeface="sans"
+                android:padding="5dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

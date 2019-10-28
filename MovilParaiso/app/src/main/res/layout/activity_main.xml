@@ -8,13 +8,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
 
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true">
+            android:layout_centerInParent="true"
+            android:background="@android:color/white">
 
 
             <TextView
@@ -29,12 +31,12 @@
 
             <ImageView
                 android:id="@+id/imgescudo"
-                android:layout_width="120sp"
-                android:layout_height="120sp"
+                android:layout_width="140sp"
+                android:layout_height="140sp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/txtMuni"
                 android:layout_marginTop="20sp"
-                android:background="@color/gris"
+                android:background="@drawable/escudo"
                 android:contentDescription="@string/escudo"/>
 
             <Button

@@ -7,4 +7,6 @@
     <string name="user">USUARIO</string>
     <string name="pass">CONTRASEÑA</string>
     <string name="olvido">¿Olvidó su contraseña?</string>
+    <string name="gestAtrac">gestionar\natractivos\nturísticos</string>
+    <string name="gestAgenda">gestionar\nagenda\ncultural</string>
 </resources>

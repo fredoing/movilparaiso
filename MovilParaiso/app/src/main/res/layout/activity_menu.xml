@@ -6,47 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".Menu">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_gestAtrac"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:layout_marginBottom="45dp"
+        android:background="@color/azul"
+        android:padding="5dp"
+        android:text="@string/gestAtrac"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gestAgenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <include layout="@layout/titlebar"/>
+    <Button
+        android:id="@+id/btn_gestAgenda"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="208dp"
+        android:background="@color/amarillo"
+        android:padding="5dp"
+        android:text="@string/gestAgenda"
+        android:textColor="@color/azul"
+        android:textSize="26sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gestAtrac" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="60dp"
-            android:layout_marginTop="270dp">
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
-            <Button
-                android:id="@+id/btn_gestAtrac"
-                android:layout_width="250sp"
-                android:layout_height="wrap_content"
-                android:background="@color/azul"
-                android:text="@string/gestAtrac"
-                android:textSize="26sp"
-                android:typeface="sans"
-                android:textColor="@android:color/white"
-                android:padding="5dp" />
-
-            <Button
-                android:id="@+id/btn_gestAgenda"
-                android:layout_width="250sp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_gestAtrac"
-                android:layout_marginTop="80dp"
-                android:background="@color/amarillo"
-                android:text="@string/gestAgenda"
-                android:textColor="@color/azul"
-                android:textSize="26sp"
-                android:typeface="sans"
-                android:padding="5dp"/>
-
-        </RelativeLayout>
-
-
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="102dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gestAtrac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

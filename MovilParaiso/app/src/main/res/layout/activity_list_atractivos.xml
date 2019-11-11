@@ -2,89 +2,65 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ListAtractivos">
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/simpleListViewAtractivos"
+        android:layout_width="333dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="90dp"
+        android:entries="@android:array/imProtocols"
 
-        <include layout="@layout/titlebar"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288"
+        tools:listitem="@android:layout/simple_list_item_1" />
 
-        <ImageView
-            android:id="@+id/backbtn"
-            android:layout_width="37dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back"
-            android:paddingTop="150dp"
-            android:layout_margin="10dp"
-            android:adjustViewBounds="true"/>
+    <TextView
+        android:id="@+id/atractivos_titulos"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/atract"
+        android:textColor="#155D8B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:paddingTop="200dp">
+    <Button
+        android:id="@+id/Agregarbutton"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#155D8B"
+        android:text="@string/agregar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleListViewAtractivos" />
 
-            <TextView
-                android:id="@+id/atractivo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/atract"
-                android:layout_marginStart="40sp"
-                android:textAllCaps="true"
-                android:textColor="@color/azul"/>
-
-            <TextView
-                android:id="@+id/distrito"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/dist"
-                android:layout_alignEnd="@id/lista"
-                android:textColor="@color/azul"
-                android:textAllCaps="true"
-                android:layout_marginEnd="40sp"/>
-
-            <ListView
-                android:id="@+id/lista"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:layout_marginEnd="20sp"
-                android:layout_marginStart="20sp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20sp"/>
-
-            <Button
-                android:id="@+id/newatract"
-                android:layout_width="115sp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lista"
-                android:layout_alignStart="@id/lista"
-                android:layout_marginStart="50sp"
-                android:layout_marginTop="10sp"
-                android:text="@string/addatract"
-                android:textColor="@android:color/white"
-                android:background="@color/azul"
-                android:textSize="18sp"
-                android:typeface="sans"/>
-
-            <Button
-                android:id="@+id/delete"
-                android:layout_width="115sp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lista"
-                android:layout_alignEnd="@id/lista"
-                android:layout_marginEnd="50sp"
-                android:layout_marginTop="10sp"
-                android:text="@string/deleteatract"
-                android:textColor="@android:color/white"
-                android:typeface="sans"
-                android:textSize="18sp"
-                android:background="@color/rojo"/>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/simpleListViewAtractivos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atractivos_titulos"
+        app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,19 +52,6 @@
                 android:textSize="26sp"
                 android:typeface="sans"/>
 
-            <Button
-                android:id="@+id/btnRegister"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/btnLogin"
-                android:layout_marginTop="20sp"
-                android:background="@color/amarillo"
-                android:textColor="@color/azul"
-                android:text="@string/registrarse"
-                android:textSize="26sp"
-                android:typeface="sans"/>
-
         </RelativeLayout>
 
 

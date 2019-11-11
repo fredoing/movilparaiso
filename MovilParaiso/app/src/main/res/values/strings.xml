@@ -9,8 +9,28 @@
     <string name="olvido">¿Olvidó su contraseña?</string>
     <string name="gestAtrac">gestionar\natractivos\nturísticos</string>
     <string name="gestAgenda">gestionar\nagenda\ncultural</string>
-    <string name="atract">atractivo</string>
+    <string name="atract">ATRACTIVOS TURISTICOS</string>
     <string name="dist">distrito</string>
     <string name="addatract">agregar\natractivo</string>
     <string name="deleteatract">eliminar\natractivo</string>
+    <string name="todo">TODO</string>
+    <string name="agregar">Agregar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="agenda_cultural">AGENDA CULTURAL</string>
+    <string name="Agregarbutton">Button</string>
+    <string name="editarAtract">EDITAR ATRACTIVO</string>
+    <string name="agre_atrac">AGREGAR ATRACTIVO TURÍSTICO</string>
+    <string name="nombreAtract">Nombre</string>
+    <string name="horrioAtrc">Horario</string>
+    <string name="direcAtrc">Dirección</string>
+    <string name="contacAtrac">Contacto</string>
+    <string name="descripAtrc">Descripción</string>
+    <string name="distr">Distrito</string>
+    <string name="agregareve">AGREGAR EVENTO</string>
+    <string name="horaEvent">Hora</string>
+    <string name="lugarevent">Lugar</string>
+    <string name="edit">Editar</string>
+    <string name="editEve">EDITAR EVENTO</string>
+    <string name="fecha">Fecha</string>
+
 </resources>

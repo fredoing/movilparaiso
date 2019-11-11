@@ -17,6 +17,12 @@ public class Menu extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_menu);
 
+        //listaAtractivos.add(new Atractivos("Mirador Orosi", "Lunes a viernes", "Orosi", "sadsa","Orosi"));
+        //listaAtractivos.add(new Atractivos("Mirador Ujarras", "Lunes a viernes", "Ujarras", "sadsa","Ujarras"));
+        //listaAtractivos.add(new Atractivos("Restaurante", "Lunes a viernes", "Orosi", "sadsa","Orosi"));
+        //listaAtractivos.add(new Atractivos("Río", "Lunes a viernes", "Santiago", "sadsa","Santiago"));
+        //listaAtractivos.add(new Atractivos("Jardín Lankaster", "Lunes a viernes", "Paraíso", "sadsa","Paraíso"));
+
         Button btnAtractivos = findViewById(R.id.btn_gestAtrac);
         Button btnAgenda = findViewById(R.id.btn_gestAgenda);
 
@@ -41,6 +47,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openAgenda() {
-
+        Intent intent = new Intent(this, Agenda.class);
+        startActivity(intent);
     }
 }

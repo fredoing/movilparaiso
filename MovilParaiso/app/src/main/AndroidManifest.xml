@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ListAtractivos"></activity>
+       <activity android:name = ".EditarAtractivo"></activity>
+       <activity  android:name=".AgregarAtractivo"></activity>
+        <activity android:name=".Agenda"></activity>
+        <activity android:name=".AgregarEvento"></activity>
         <activity android:name=".Menu" />
         <activity
             android:name=".Login"
